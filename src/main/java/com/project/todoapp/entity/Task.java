@@ -1,13 +1,15 @@
 package com.project.todoapp.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "task", schema="todo")
-@Data
+@Getter
+@Setter
 public class Task {
 
     @Id
