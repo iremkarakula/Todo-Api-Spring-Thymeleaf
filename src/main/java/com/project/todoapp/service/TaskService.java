@@ -17,7 +17,7 @@ public class TaskService {
     private final TaskRepository taskRepository;
 
     public List<Task> getAllTasks() {
-        return taskRepository.findAll();
+        return taskRepository.findAllByOrderByCreatedAtDesc();
     }
 
     public void createTask(String title) {
